@@ -1,0 +1,265 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Poppins;
+  box-sizing: border-box; 
+  }
+  .header{
+      background-color:#f7f3f0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0 1%;
+      height:100vh;
+      margin-top: 0%;
+      font-family: Poppins;
+      
+    
+    } 
+    .feature-img{
+      height:90%;
+      position: absolute;
+      bottom: 0;
+      right: 90px;
+         
+  
+  }
+    .blog-header {
+      font-size: 2.5rem;
+      margin: .5rem;
+      font-weight: bold;
+    
+   }
+   .content .btn{
+      display: inline-block;
+      background: linear-gradient(45deg, #739cad, #f7f3f0);
+      border-radius: 6px;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      text-decoration: none;
+      color: #fff;
+      box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+
+   }
+   .navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: #f7f3f0;
+    color:#333;
+
+  }
+   .navbar-links ul{
+  margin:0;
+  padding: 0;
+  display: flex;
+
+}
+/* to center the links in the section */
+.navbar-links{
+  flex: 1;
+  text-align: center;
+}
+
+/* controls the look of the navigation elements */
+.navbar-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 30px;
+  position: relative;
+}
+ /* controls the look of the links like the color & font */
+.navbar-links ul li a{
+  color: #333;
+  text-decoration: none;
+
+  
+}
+
+ /* for the underline animation on the links */
+.navbar-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  height: 2px;
+  background: linear-gradient(45deg, #739cad, #f7f3f0);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar-links ul li:hover::after{
+  width:100%;
+}
+.content h1{
+  font-size: .1.90rem;
+  font-weight: 100;
+  margin-top: 24px;
+  margin-bottom: 15px;
+  color: #232d60;
+}
+.content p{
+  font-size: 1.04rem;
+  color: #6a7199;
+}
+.content{
+  margin-left: 10%;
+  margin-top: 10%;
+}
+  
+
+  .navbar-links li{
+    list-style: none;
+  }
+
+.navbar-links li a{
+  text-decoration: none;
+  color: #333;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links li:hover{
+
+}
+
+.feature-img{
+  height:90%;
+  position: absolute;
+  bottom: 0;
+  right: 160px;
+
+
+}
+
+/*--Media query tells you that if a certain condition is met run the query in here---*/
+
+@media(max-width:600px){
+  .toggle-button{
+      display:flex;
+  }
+  .navbar-links{
+      display:none;
+      width: 100%;
+  }
+  .navbar{
+      flex-direction: column;
+      align-items: flex-start;
+
+  }
+  .navbar-links ul{
+      width: 100%;
+      flex-direction: column;
+  }
+  .navbar-links li{
+      text-align: center;
+  }
+
+  .navbar-links li a{
+      padding: .5rem 1rem;
+  }
+  .navbar-links .active{
+      display:flex;
+  }
+  .feature-img{
+      text-align: right;
+  }
+
+  
+}
+
+  /*--blog-------------------*/
+  #blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  
+  }
+ 
+  .blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+  
+  }
+  .blog-box{
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+  }
+  .blog-img{
+    width: 100%;
+    height: auto;
+  }
+  .blog-img img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+  
+  }
+  .blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .blog-text span{
+    color: #f33c3c;
+    font-size: 0.9rem;
+  }
+  .blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+  
+  }
+  .blog-text .blog-title:hover{
+    color: grey;
+    transition: all ease 0.3s;
+  }
+  .blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin:20px 0px;
+  }
+  .blog-text a{
+    color: #0f0f0f;
+  
+  }
+  .blog-text a:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+  } 
+  @media(max-width:1250px)
+  {
+   .blog-box{
+    width:300px;
+  
+   }
+  
+  } 
+  @media(max-width:1100px)
+  {
+   .blog-box{
+    width:70%;
+    }
+    } 
+  
+    html, body{
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+    }
+    

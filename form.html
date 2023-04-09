@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating a responsive form</title>
+<script type="text/javascript">
+    function test(){
+        window.alert("Welcome to JavaScript. It is fun to be here");
+    }
+    function send(){
+        window.alert("Your  Form has been submitted to the server")
+    }
+
+    //I declared variables and used them in the browser console. Just to test
+    let myAge = 25
+    let yourAge = 30
+
+</script>
+
+</head>
+<body>
+    <h1><centre><u>EXAM REGISTRATION FORM</u></centre></h1>
+    <h3>This is an example of using onclick attribute in HTML.</h3>
+
+    <p> Click the following button to see the effect.</p><br>
+
+    <input type="text" name="yourname" placeholder="john doe" minlength="3" maxlength="20" required id="yourname">
+
+
+    <button onclick="test()">Click me</button><br><br>
+
+    <input type="email"  placeholder="johndoe@gmail.com"><br><br>
+    date of birth <input type="date" name="DOB" min="2022-11-22" max="2022-11-22">
+    <BR><br>
+        Test Date <input type="time" name="testdate"><br><br>
+
+        <textarea  rows="10" cols="40" maxlength="100"></textarea><br><br>
+       <input type="submit" onclick="send()" value="submit">
+
+
+
+</body>
+</html>

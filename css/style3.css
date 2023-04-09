@@ -1,0 +1,16 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+
+}
+.hero{
+    width: 100%;
+    min-height:100vh;
+    background-image:url('images/hd.jfif');
+    background-position:cover;
+    padding: 10px 10%;
+    overflow: hidden;
+
+}

@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3f0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Poppins;
+    
+}
+.blog-header {
+  font-size: 2.5rem;
+  margin: .5rem;
+  font-weight: bold;
+
+}
+
+.registerArea{
+    width: 380px;
+    height: 600px;
+    background: #c6beb3;
+    opacity: 0.87;
+    top: 54%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 40px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    color:aquamarine;
+}
+
+h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 25px;
+    color: #333;
+}
+
+.registerArea input {
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.registerArea input[type = "text"], input[type = "password"]{
+    border: none;
+    background: white;
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+
+.registerArea input[type = "submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: linear-gradient(45deg, #739cad, #f7f3f0);
+    color: #333;
+    font-size: 14px;
+    border-radius: 15px;
+    width: 100%;
+    align-items: center;
+}
+
+.registerArea input[type = "submit"]:hover {
+    cursor: pointer;
+    background: #1A535C;
+}
+
+.registerArea a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1A535C
+}
+
+.registerArea a:hover {
+    color: #ffff;
+}
+
+.register {
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items:right;
+  background-color: #f7f3f0;
+  color:#333;
+
+} 
+
+.navbar-links ul{
+  margin:0;
+  padding: 0;
+  display: flex;
+
+}
+/* to center the links in the section */
+.navbar-links{
+  flex: 1;
+  text-align: right;
+}
+
+/* controls the look of the navigation elements */
+.navbar-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 30px;
+  position: relative;
+}
+ /* controls the look of the links like the color & font */
+.navbar-links ul li a{
+  color: #333;
+  text-decoration: none;
+
+  
+}
+
+ /* for the underline animation on the links */
+.navbar-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  height: 2px;
+  background: linear-gradient(45deg, #739cad, #f7f3f0);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.navbar-links ul li:hover::after{
+  width:100%;
+}

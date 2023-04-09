@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,300&display=swap");
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Poppins;
+    box-sizing: border-box; 
+    }
+    #header{
+        background-color:#f7f3f0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0 1%;
+        height:70vh;
+        margin-top: 0%;
+        font-family: Poppins;
+       
+        
+      
+      } 
+      
+      .blog-header {
+        font-size: 2.5rem;
+        margin: .5rem;
+        font-weight: bold;
+      
+     }
+
+    
+     .content .btn{
+        display: inline-block;
+        background: linear-gradient(45deg, #739cad, red);
+        border-radius: 6px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: #fff;
+        box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+
+     }
+     div a:first-of-type{
+      color:#f33c3c;
+
+     }
+
+     .blog-box:nth-child(2){
+      transition-delay: 200ms;
+     }
+     .blog-box:nth-child(3){
+      transition-delay:400ms ;
+     }
+     .blog-box:nth-child(4){
+      transition-delay:600ms ;
+     }
+    
+      
+             
+     
+    
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items:right;
+    background-color: #f7f3f0;
+    color:#333;
+
+  } 
+  
+  .navbar-links ul{
+    margin:0;
+    padding: 0;
+    display: flex;
+
+  }
+  /* to center the links in the section */
+.navbar-links{
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* controls the look of the navigation elements */
+  .navbar-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 30px;
+    position: relative;
+   
+  }
+   /* controls the look of the links like the color & font */
+  .navbar-links ul li a{
+    color: #333;
+    text-decoration: none;
+
+    
+  }
+  .list ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+  }
+  
+   /* for the underline animation on the links */
+  .navbar-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    height: 2px;
+    background: linear-gradient(45deg, #739cad, #f7f3f0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .navbar-links ul li:hover::after{
+    width:100%;
+  }
+  .content h1{
+    font-size: .1.90rem;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+  }
+  .content p{
+    font-size: 1.04rem;
+    color: #6a7199;
+  }
+  .content{
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  .row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+  }
+  .col{
+    flex-basis: 10%;
+    margin-left: 15.33%;
+  }
+  .card{
+    width: 400px;
+    height: 450px;
+    display:inline-block;
+    border-radius: 10px;
+    padding: 65px 35px;
+    box-sizing:border-box;
+    cursor:pointer;
+    margin: 10px 15px;
+    background-image: url(cool.jfif);
+    background-repeat: no-repeat;
+    background-position:center ;
+
+  
+
+  }
+    
+  
+    .navbar-links li{
+      list-style: none;
+    }
+
+.navbar-links li a{
+    text-decoration: none;
+    color: #333;
+    padding: 1rem;
+    display: block;
+}
+
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+/*--Media query tells you that if a certain condition is met run the query in here---*/
+
+@media(max-width:600px){
+    .toggle-button{
+        display:flex;
+    }
+    .navbar-links{
+        display:none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links .active{
+        display:flex;
+    }
+   
+
+    
+}
+#recent, h2{
+  text-align: left;
+}
+
+    /*--blog-------------------*/
+   
+    #blog{
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px;
+     
+    
+    }
+    #recent{
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      flex-direction: column;
+      padding: 40px;
+     
+    }
+    #recent .blog-box{
+      width: 800px;
+      margin-left: 100px;
+    }
+    #footer{
+      background-color: #f7f3f0;
+    }
+    .footer-header{
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 100%;
+
+    }
+    
+
+   
+    .blog-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0px;
+      flex-wrap: wrap;
+ 
+    
+    }
+    
+    .blog-box{
+      width: 400px;
+      background-color: #ffffff;
+      border: 5px solid #f7f3f0;
+      margin-right: 50px;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: content-box;
+      border-radius: 25px;
+      
+     
+    }
+    .blog-box:nth-child(2){
+      transition-delay: 200ms;
+    }
+    .blog-box:nth-child(3){
+      transition-delay: 400ms;
+    }
+    .blog-box:nth-child(4){
+      transition-delay: 600ms;
+    }
+  
+  
+  .show{
+      opacity:1;
+      filter: blur(0);
+      transform: translateX(0);
+  }
+    
+    
+    .blog-img img{
+      width: 100%;
+      height:100%;
+      object-fit: cover;
+      object-position: center;
+      border-top-left-radius:25px ;
+      border-top-right-radius: 25px;
+    
+    
+    }
+    .blog-text{
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    .blog-text span{
+      color: #f33c3c;
+      font-size: 0.9rem;
+    }
+    .blog-text .btn{
+      display: inline-block;
+        background: linear-gradient(45deg, #739cad, #f7f3f0);
+        border-radius: 6px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: #fff;
+        box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+
+    }
+    .blog-text .blog-title{
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #272727;
+      text-decoration: none;
+    
+    }
+    .blog-text .blog-title:hover{
+      color: grey;
+      transition: all ease 0.3s;
+    }
+    .blog-text p{
+      color: #9b9b9b;
+      font-size: 0.9rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin:20px 0px;
+    }
+    .blog-text a{
+      color: #0f0f0f;
+    
+    }
+    .blog-text a:hover{
+      color: #f33c3c;
+      transition: all ease 0.3s;
+    } 
+    @media(max-width:1250px)
+    {
+     .blog-box{
+      width:300px;
+    
+     }
+    
+    } 
+    @media(max-width:1100px)
+    {
+     .blog-box{
+      width:70%;
+      }
+      } 
+    
+      html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+      #footer{
+        padding: 40px 0;
+       
+      }
+      #footer .social{
+        text-align: center;
+        padding-bottom: 25px;
+        color: linear-gradient(100deg, #739cad, #f7f3f0);
+
+      }
+
+      #footer .social a{
+        font-size: 24px;
+        color:black;
+        border: 1px solid #ccc;
+        width: 40px;
+        height: 40px;
+        line-height: 30px; 
+        display: inline-block;
+        text-decoration: center;
+        border-radius: 50%;
+        margin: 0 8px;
+       opacity: 0.75;        
+
+      }
+      #footer .social a:hover{
+        opacity: 0.9;
+      }
+      #footer ul{
+        margin-top:0;
+        padding:0;
+        list-style: none;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
+      #footer ul li a{
+        color:inherit ;
+        text-decoration: none;
+        opacity: 0.8;
+      }
+
+      #footer ul li {
+        display:inline-block;
+        padding: 0.15px;
+        text-align: center;
+       }
+       #footer ul li a:hover{
+        opacity: 1px;
+       }
+       #footer .copyright p{
+        margin-top: 16px;
+        text-align: left;
+        font-size: 13px;
+        color:black;
+       }
+
+      
